@@ -1,0 +1,38 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{t}from"./jsx-runtime-DeHZSEgm.js";import{t as n}from"./chevrons-up-down-DfzQ146t.js";import{i as r,n as i,s as a,t as o}from"./dist-BjOSTJa1.js";import{n as s,t as c}from"./utils-DyM7Gzdm.js";import{r as l,t as u}from"./motion-C9LyEEgN.js";import{r as d,t as f}from"./button-DlhVWcgl.js";import{r as p}from"./icons.stories-CefJYQUg.js";function m(e){return(0,_.jsx)(r,{"data-slot":`collapsible`,...e})}function h(e){return(0,_.jsx)(i,{"data-slot":`collapsible-trigger`,...e})}function g({className:e,...t}){return(0,_.jsx)(o,{"data-slot":`collapsible-content`,className:c(`overflow-hidden`,u.collapsible,e),...t})}var _;function v(){return(v=e((()=>{a(),l(),s(),_=t();try{m.displayName=`Collapsible`,m.__docgenInfo={description:`Mostra ou oculta um bloco de conteúdo. Sem estilo próprio: composição livre.`,displayName:`Collapsible`,filePath:`/home/runner/work/jurios-design-system/jurios-design-system/src/components/navigation/collapsible/collapsible.tsx`,methods:[],props:{asChild:{defaultValue:null,declarations:[{fileName:`jurios-design-system/node_modules/.pnpm/@radix-ui+react-primitive@2.1.10_@types+react-dom@19.3.0_@types+react@19.3.0__@types+re_f83f88542c24ef44463bf36336741c4c/node_modules/@radix-ui/react-primitive/dist/index.d.mts`,name:`TypeLiteral`}],description:``,name:`asChild`,required:!1,tags:{},type:{name:`boolean`}}},tags:{}}}catch{}try{h.displayName=`CollapsibleTrigger`,h.__docgenInfo={description:`Elemento que alterna o conteúdo.`,displayName:`CollapsibleTrigger`,filePath:`/home/runner/work/jurios-design-system/jurios-design-system/src/components/navigation/collapsible/collapsible.tsx`,methods:[],props:{asChild:{defaultValue:null,declarations:[{fileName:`jurios-design-system/node_modules/.pnpm/@radix-ui+react-primitive@2.1.10_@types+react-dom@19.3.0_@types+react@19.3.0__@types+re_f83f88542c24ef44463bf36336741c4c/node_modules/@radix-ui/react-primitive/dist/index.d.mts`,name:`TypeLiteral`}],description:``,name:`asChild`,required:!1,tags:{},type:{name:`boolean`}}},tags:{}}}catch{}try{g.displayName=`CollapsibleContent`,g.__docgenInfo={description:`Conteúdo recolhível: altura animada pela variável do Radix.`,displayName:`CollapsibleContent`,filePath:`/home/runner/work/jurios-design-system/jurios-design-system/src/components/navigation/collapsible/collapsible.tsx`,methods:[],props:{asChild:{defaultValue:null,declarations:[{fileName:`jurios-design-system/node_modules/.pnpm/@radix-ui+react-primitive@2.1.10_@types+react-dom@19.3.0_@types+react@19.3.0__@types+re_f83f88542c24ef44463bf36336741c4c/node_modules/@radix-ui/react-primitive/dist/index.d.mts`,name:`TypeLiteral`}],description:``,name:`asChild`,required:!1,tags:{},type:{name:`boolean`}}},tags:{}}}catch{}})))()}function y({children:e}){return(0,b.jsx)(`div`,{className:`rounded-control bg-card px-4 py-3 text-body-sm`,children:e})}var b,x,S,C,w,T,E;function D(){return(D=e((()=>{p(),d(),v(),b=t(),{fn:x}=__STORYBOOK_MODULE_TEST__,S={title:`Componentes/Navegação/Collapsible`,component:m,args:{defaultOpen:!0,disabled:!1,title:`Partes do processo`,onOpenChange:x()},argTypes:{defaultOpen:{control:`boolean`,description:`Aberto ao montar (estado inicial não controlado).`},disabled:{control:`boolean`,description:`Impede abrir ou fechar pelo gatilho.`},title:{control:`text`,description:`Texto do cabeçalho ao lado do gatilho (composição da story).`},open:{table:{disable:!0}},asChild:{table:{disable:!0}},className:{table:{disable:!0}},children:{table:{disable:!0}},onOpenChange:{table:{disable:!0}}},parameters:{docs:{description:{component:'Mostra ou oculta um único bloco de conteúdo. Não tem estilo próprio: você compõe o gatilho e o conteúdo como quiser, por exemplo deixando a primeira parte do processo visível e as demais recolhidas.\n\n**Quando usar**\n- "Mostrar mais" em listas curtas (partes, advogados, anexos).\n- Filtros avançados que abrem abaixo da barra de filtros.\n- Submenus recolhíveis na Sidebar (envolva o `SidebarMenuItem` em `Collapsible`).\n\n**Quando não usar**\n- Lista de perguntas com visual de cartão e abertura coordenada: use Accordion.\n- Conteúdo que deve sobrepor a tela sem empurrar o layout: use Popover (conteúdo pequeno) ou Sheet (painel lateral).\n\n**Accordion ou Collapsible?** Accordion é um conjunto de itens com visual pronto (cartão, botão + e −) e regra de abertura coordenada (`single` ou `multiple`). Collapsible é uma primitiva sem estilo para mostrar ou ocultar um único bloco, composta livremente.\n\n**Anatomia**\n- `Collapsible`: raiz. `defaultOpen` ou `open` + `onOpenChange`; `disabled`.\n- `CollapsibleTrigger`: elemento que alterna. Use `asChild` com um Button.\n- `CollapsibleContent`: bloco que aparece e some.\n\n```tsx\n<Collapsible>\n  <div className="flex items-center justify-between">\n    <span>Partes do processo (3)</span>\n    <CollapsibleTrigger asChild>\n      <Button variant="ghost" size="icon-sm" aria-label="Mostrar todas as partes">\n        <ChevronsUpDown />\n      </Button>\n    </CollapsibleTrigger>\n  </div>\n  <CollapsibleContent>{/* demais partes */}</CollapsibleContent>\n</Collapsible>\n```\n\n**Acessibilidade**\n- O trigger recebe `aria-expanded` e `aria-controls` automaticamente.\n- Botão só com ícone precisa de `aria-label` que descreva a ação.'}}}},C=[`Autor · Maria da Silva`,`Réu · Banco X S.A.`,`Terceiro · Seguradora Y`],w={parameters:{docs:{description:{story:`Aberto: a primeira parte fica sempre visível e as demais estão no CollapsibleContent.`}}},render:({title:e,...t})=>(0,b.jsxs)(m,{...t,className:`flex w-[360px] flex-col gap-2`,children:[(0,b.jsxs)(`div`,{className:`flex items-center justify-between pl-4`,children:[(0,b.jsxs)(`span`,{className:`text-label-md`,children:[e,` (`,C.length,`)`]}),(0,b.jsx)(h,{asChild:!0,children:(0,b.jsx)(f,{variant:`ghost`,size:`icon-sm`,"aria-label":`Mostrar todas as partes`,children:(0,b.jsx)(n,{})})})]}),(0,b.jsx)(y,{children:C[0]}),(0,b.jsx)(g,{className:`flex flex-col gap-2`,children:C.slice(1).map(e=>(0,b.jsx)(y,{children:e},e))})]},String(t.defaultOpen))},T={...w,args:{defaultOpen:!1},parameters:{docs:{description:{story:`defaultOpen={false}: só a primeira parte aparece.`}}}},E=[`Default`,`Closed`],w.parameters={...w.parameters,docs:{...w.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    docs: {
+      description: {
+        story: "Aberto: a primeira parte fica sempre visível e as demais estão no CollapsibleContent."
+      }
+    }
+  },
+  render: ({
+    title,
+    ...args
+  }) => <Collapsible key={String(args.defaultOpen)} {...args} className="flex w-[360px] flex-col gap-2">
+      <div className="flex items-center justify-between pl-4">
+        <span className="text-label-md">{title} ({partes.length})</span>
+        <CollapsibleTrigger asChild>
+          <Button variant="ghost" size="icon-sm" aria-label="Mostrar todas as partes">
+            <ChevronsUpDown />
+          </Button>
+        </CollapsibleTrigger>
+      </div>
+      <Parte>{partes[0]}</Parte>
+      <CollapsibleContent className="flex flex-col gap-2">
+        {partes.slice(1).map(p => <Parte key={p}>{p}</Parte>)}
+      </CollapsibleContent>
+    </Collapsible>
+}`,...w.parameters?.docs?.source}}},T.parameters={...T.parameters,docs:{...T.parameters?.docs,source:{originalSource:`{
+  ...Default,
+  args: {
+    defaultOpen: false
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "defaultOpen={false}: só a primeira parte aparece."
+      }
+    }
+  }
+}`,...T.parameters?.docs?.source}}}})))()}D();export{T as Closed,w as Default,E as __namedExportsOrder,S as default};
